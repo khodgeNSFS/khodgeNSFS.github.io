@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^artastebrand\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.artastebrand\.com$
+RewriteRule ^/?$ "http\:\/\/www\.artaste\.us\/" [R=301,L]
+
