@@ -1,0 +1,69 @@
+
+@media only screen and (max-width: 1199px){	
+#featured-1{display: none;}
+#featured-2{position: relative; left: auto; top: auto; width: 100%;}
+.aim-wrap{padding-top: 40px;}
+.featured-imgs{padding-bottom: 70px;}
+}
+
+@media only screen and (max-width:1024px){
+	.passion-wrap{padding-top: 60px; padding-bottom: 60px;}
+	.featured-imgs{padding-top: 0px; padding-bottom: 50px;}
+}
+@media only screen and (max-width:992px){
+	
+.passion{ -moz-background-size:20% auto, 10% auto, 8% auto; -webkit-background-size:20% auto, 10% auto, 8% auto; background-size:20% auto, 10% auto, 8% auto;}
+.aim{-webkit-background-size: 8% auto, 12% auto; -moz-background-size: 8% auto, 12% auto; background-size: 8% auto, 12% auto; padding-bottom: 150px;}
+.passion p,.aim p,.our-story p{padding-left: 50px; padding-right: 50px; font-size: 18px;}
+.aim-wrap{padding-bottom: 80px;}
+#footer .container{width: 100%;}
+#footer .social-buttons li{margin: 0 20px;}
+#footer{padding-top: 70px; padding-bottom: 70px;}
+#footer .logo-wrap{text-align: center;}
+#footer .logo-wrap .col-lg-6{display: inline-block; width: auto; float: none; padding-left: 10px; padding-right: 10px;}
+#footer .logo-wrap .col-lg-6 img{float: none; margin:0 auto; width: 90%;}
+.logo-wrap .cangshan{margin-top: 10px;}
+
+}
+
+@media only screen and (max-width:800px){
+	#footer .logo-wrap .col-lg-6{margin-bottom: 50px;}
+	#footer .logo-wrap{padding-bottom: 50px;}
+}
+@media only screen and (max-width:768px){
+
+p{font-size:18px;}
+.section-head{text-align: left;}
+.aim{padding-top: 75px; padding-bottom: 160px;}
+.passion .section-head::before{display: none;}
+.aim .section-head::before{display: none;}
+.our-story .section-head::before{display: none;}
+.passion p, .aim p, .our-story p{padding-left: 0; padding-right: 0; text-align: left;}
+.our-story .section-head{text-align: left;}
+.our-story p{padding-left: 0; padding-right: 0; text-align: left;}
+
+}
+
+@media only screen and (max-width:767px){
+.container{width: 98%;}
+
+#footer .social-buttons li a{width: 60px; height: 60px; font-size: 35px; line-height: 60px;}
+#footer .social-buttons li a.pinterest{font-size: 35px; padding: 0;}
+#footer .social-buttons li{margin: 5px 15px;}
+#contact-box li{margin-bottom: 7px;}
+#contact-box li p{line-height: 22px; font-size: 16px;}
+#contact-box{padding: 10px 10px 4px 10px;}
+}
+
+@media only screen and (max-width: 640px){ 
+.passion p, .aim p, .our-story p{padding-left: 0px; padding-right: 10px; font-size: 17px; line-height: 1.4;}
+.passion{padding-top: 110px; padding-bottom: 110px;}
+.aim{padding-bottom: 100px;}
+#footer .logo-wrap .col-lg-6 img{width: 90%;}
+#footer .logo-wrap{padding-bottom: 20px;}
+#footer{padding-top: 30px; padding-bottom: 30px;}
+}
+
+@media only screen and (max-width:360px){
+	.our-story-wrap .our-story{padding-bottom: 210px;}
+}

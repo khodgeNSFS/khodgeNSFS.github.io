@@ -1,0 +1,62 @@
+$(document).ready(function(){
+		$(function() {
+  			setInterval(function() {
+    			$("#featured-2")
+      			.filter(":onScreen").delay(900).queue(function(){
+       				 $(this).addClass('colored');
+       				 $(this).siblings('#featured-1').addClass('colored');
+    			});
+  			}, 1000)
+		});
+
+		$('.featured-imgs img').each(function() {
+			$(this).mouseenter(function(event) {
+			//$(this).css({'z-index':'30'}).siblings('img').css({'z-index':'2'});
+		});
+		});
+
+		
+
+		$('.image-link').each(function(){
+			var $this = $(this);
+			var imagePath = $this.find('img').attr('src');
+			$this.attr('href', imagePath);
+		});
+
+		$('.image-link').magnificPopup({ 
+  			type: 'image',
+  			closeOnContentClick:true,
+  			zoom: {
+    			enabled: true,
+    			duration: 300,
+    			easing: 'ease-in-out',
+    			opener: function(openerElement) {
+      			// openerElement is the element on which popup was initialized, in this case its <a> tag
+      			// you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      			return openerElement.is('img') ? openerElement : openerElement.find('img');
+    			}
+  			}
+		});
+	});
+	
+
+	$(window).load(function(){
+		
+		function footerCenter(){
+			var h = $(window).height();
+			var logo = $('.logo-wrap').outerHeight();
+			var cangshan = $('.social-buttons').outerHeight();
+			var total = logo + cangshan;
+			 var diff = h-total;
+			$("#footer").css({
+				'padding-top':(diff/2) + 'px',
+				'padding-bottom':(diff/2) +'px'
+			});
+
+		}
+	footerCenter();
+
+		$(window).resize(function(){
+			footerCenter();
+		});
+	});
